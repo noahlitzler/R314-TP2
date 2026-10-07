@@ -20,6 +20,7 @@ jobs:
           script: |
             cd /var/www/R314-TP2
             git pull origin main
-            bun install
-            bun run --bun build
+            /home/etudiant/.bun/bin/bun install
+            /home/etudiant/.bun/bin/bun run --bun build
             sudo systemctl restart r314-tp2
+
